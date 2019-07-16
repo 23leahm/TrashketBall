@@ -15,7 +15,6 @@
 		4DC73A9222DCF47B000DB2BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DC73A9022DCF47B000DB2BC /* Main.storyboard */; };
 		4DC73A9422DCF47C000DB2BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DC73A9322DCF47C000DB2BC /* Assets.xcassets */; };
 		4DC73A9722DCF47C000DB2BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DC73A9522DCF47C000DB2BC /* LaunchScreen.storyboard */; };
-		4DC73AA122DCFA9C000DB2BC /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 4DC73AA022DCFA9C000DB2BC /* Fonts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,7 @@
 		4DC73A9322DCF47C000DB2BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DC73A9622DCF47C000DB2BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DC73A9822DCF47C000DB2BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4DC73AA022DCFA9C000DB2BC /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = ../../Fonts; sourceTree = "<group>"; };
+		4DC73AAA22DE5FF7000DB2BC /* ARCADECLASSIC.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = ARCADECLASSIC.TTF; path = "Fonts/TextFont Trashket/ARCADECLASSIC.TTF"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +61,6 @@
 		4DC73A8522DCF47B000DB2BC /* Trashket Ball */ = {
 			isa = PBXGroup;
 			children = (
-				4DC73AA022DCFA9C000DB2BC /* Fonts */,
 				4DC73A8622DCF47B000DB2BC /* AppDelegate.swift */,
 				4DC73A8822DCF47B000DB2BC /* GameScene.sks */,
 				4DC73A8A22DCF47B000DB2BC /* Actions.sks */,
@@ -72,6 +70,7 @@
 				4DC73A9322DCF47C000DB2BC /* Assets.xcassets */,
 				4DC73A9522DCF47C000DB2BC /* LaunchScreen.storyboard */,
 				4DC73A9822DCF47C000DB2BC /* Info.plist */,
+				4DC73AAA22DE5FF7000DB2BC /* ARCADECLASSIC.TTF */,
 			);
 			path = "Trashket Ball";
 			sourceTree = "<group>";
@@ -137,7 +136,6 @@
 				4DC73A9222DCF47B000DB2BC /* Main.storyboard in Resources */,
 				4DC73A8922DCF47B000DB2BC /* GameScene.sks in Resources */,
 				4DC73A9422DCF47C000DB2BC /* Assets.xcassets in Resources */,
-				4DC73AA122DCFA9C000DB2BC /* Fonts in Resources */,
 				4DC73A9722DCF47C000DB2BC /* LaunchScreen.storyboard in Resources */,
 				4DC73A8B22DCF47B000DB2BC /* Actions.sks in Resources */,
 			);
