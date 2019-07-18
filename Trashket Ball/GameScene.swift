@@ -12,7 +12,6 @@ import GameplayKit
 class GameScene: SKScene{
     
     var scoreLabel: SKLabelNode!
-    var gameOver = false
     
     var score = 0
     {
@@ -54,6 +53,11 @@ class GameScene: SKScene{
         checkTrash()
     }
     
+    override func update(_ currentTime: TimeInterval)
+    {
+        
+    }
+    
     func createScore()
     {
         scoreLabel = SKLabelNode(fontNamed: "Optima-ExtraBlack")
@@ -75,7 +79,6 @@ class GameScene: SKScene{
         let trashXPos1 = frame.minX + 50
         let trashXPos2 = frame.maxX - 30
         let trashYPos = frame.minY + 100
-        trashSprite.position = CGPoint(x: trashXPos1, y: trashYPos)
         setRandomTrash()
         addChild(trashSprite)
         
@@ -110,7 +113,6 @@ class GameScene: SKScene{
         //let moveDown = SKAction.move(to: CGPoint(x: trashSprite.position.x, y: frame.maxY - bioBin.size.height - 100), duration: 0.5)
         //let throwSequence = SKAction.sequence([moveUp, moveDown])
         trashSprite.run(moveUp)
-        let wait = SKAction.wait(forDuration: 1.0)
     }
     
     func checkTrash()
@@ -123,7 +125,7 @@ class GameScene: SKScene{
             if(trashSprite.texture == hangerTexture || trashSprite.texture == sodaTexture)
             {
                 incrementScore()
-                //setRandomTrash()
+                setRandomTrash()
             }
         }
         else if (trashSprite.position.x >= bioBin.position.x + xSize && trashSprite.position.x <= bioBin.position.x + 2*xSize)
@@ -132,7 +134,7 @@ class GameScene: SKScene{
             if(trashSprite.texture == appleCoreTexture || trashSprite.texture == bananaTexture)
             {
                 incrementScore()
-                //setRandomTrash()
+                setRandomTrash()
             }
         }
         else if (trashSprite.position.x >= glassBin.position.x + xSize && trashSprite.position.x <= glassBin.position.x + 2*xSize)
@@ -141,7 +143,7 @@ class GameScene: SKScene{
             if(trashSprite.texture == glassJarTexture || trashSprite.texture == wineBottleTexture)
             {
                 incrementScore()
-                //setRandomTrash()
+                setRandomTrash()
             }
         }
         else if (trashSprite.position.x >= paperBin.position.x + xSize && trashSprite.position.x <= paperBin.position.x + 2*xSize)
@@ -150,7 +152,7 @@ class GameScene: SKScene{
             if(trashSprite.texture == boxTexture || trashSprite.texture == newsTexture)
             {
                 incrementScore()
-                //setRandomTrash()
+                setRandomTrash()
             }
         }
         else if (trashSprite.position.x >= plasticBin.position.x + xSize && trashSprite.position.x <= plasticBin.position.x + 2*xSize)
@@ -159,7 +161,7 @@ class GameScene: SKScene{
             if(trashSprite.texture == waterBottleTexture || trashSprite.texture == plasticRingsTexture)
             {
                 incrementScore()
-                //setRandomTrash()
+                setRandomTrash()
             }
         }
     }
