@@ -9,6 +9,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="ARCADECLASSIC.TTF">
+            <string>ArcadeClassic</string>
+        </array>
+        <array key="ka1.ttf">
+            <string>KarmaticArcade</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="u8z-zm-yhK">
@@ -18,18 +26,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRASHKETBALL" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Cb-92-3ob">
-                                <rect key="frame" x="0.0" y="129" width="414" height="51"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="51" id="37J-wb-ZUZ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="41"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BA6-eV-NSe">
-                                <rect key="frame" x="0.0" y="227" width="414" height="40"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="24"/>
+                                <rect key="frame" x="0.0" y="227" width="414" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="mIi-sB-0Ak"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="24"/>
                                 <state key="normal" title="Instructions"/>
                                 <connections>
                                     <segue destination="Lol-gV-Y72" kind="show" id="xSJ-mS-eSy"/>
@@ -40,14 +42,15 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="1qo-rO-gaJ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="42"/>
+                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="42"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JG6-yR-s3b">
                                 <rect key="frame" x="44" y="349" width="326" height="198"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="198" id="jFe-Pj-za4"/>
+                                    <constraint firstAttribute="width" secondItem="JG6-yR-s3b" secondAttribute="height" multiplier="163:99" id="P3O-Ny-rOa"/>
+                                    <constraint firstAttribute="height" constant="198" id="qVi-EH-Vdv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" image="playButton">
@@ -57,21 +60,30 @@
                                     <segue destination="BV1-FR-VrT" kind="show" id="a0e-wZ-jRV"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRASHKET BALL" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Cb-92-3ob">
+                                <rect key="frame" x="0.0" y="64" width="414" height="117"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="117" id="H0X-R9-zvU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KarmaticArcade" family="Karmatic Arcade" pointSize="52"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="BA6-eV-NSe" firstAttribute="leading" secondItem="3Cb-92-3ob" secondAttribute="leading" id="0Ev-7L-rJt"/>
-                            <constraint firstItem="JG6-yR-s3b" firstAttribute="centerY" secondItem="3Hr-7V-GhY" secondAttribute="centerY" id="1ev-Tv-srx"/>
-                            <constraint firstItem="JG6-yR-s3b" firstAttribute="centerX" secondItem="BA6-eV-NSe" secondAttribute="centerX" id="8Cn-Yf-IKd"/>
-                            <constraint firstItem="3Cb-92-3ob" firstAttribute="top" secondItem="hiJ-0c-N7Z" secondAttribute="top" constant="85" id="BZK-Vf-hJp"/>
-                            <constraint firstItem="JG6-yR-s3b" firstAttribute="centerX" secondItem="3Hr-7V-GhY" secondAttribute="centerX" id="Mu8-yE-fI2"/>
-                            <constraint firstItem="JG6-yR-s3b" firstAttribute="leading" secondItem="hiJ-0c-N7Z" secondAttribute="leading" constant="44" id="YK7-On-tKv"/>
-                            <constraint firstItem="iJh-u6-QoD" firstAttribute="leading" secondItem="BA6-eV-NSe" secondAttribute="leading" id="Yce-zi-aj2"/>
-                            <constraint firstItem="BA6-eV-NSe" firstAttribute="top" secondItem="3Cb-92-3ob" secondAttribute="bottom" constant="47" id="meW-7V-Cde"/>
-                            <constraint firstItem="iJh-u6-QoD" firstAttribute="trailing" secondItem="BA6-eV-NSe" secondAttribute="trailing" id="pF1-2k-2XP"/>
+                            <constraint firstItem="3Cb-92-3ob" firstAttribute="trailing" secondItem="hiJ-0c-N7Z" secondAttribute="trailing" id="0XQ-PF-rz6"/>
+                            <constraint firstItem="BA6-eV-NSe" firstAttribute="leading" secondItem="3Cb-92-3ob" secondAttribute="leading" id="EFV-cv-3AJ"/>
+                            <constraint firstItem="hiJ-0c-N7Z" firstAttribute="trailing" secondItem="JG6-yR-s3b" secondAttribute="trailing" constant="44" id="PPI-Nt-TF8"/>
+                            <constraint firstItem="3Cb-92-3ob" firstAttribute="top" secondItem="hiJ-0c-N7Z" secondAttribute="top" constant="20" id="Qwg-f7-5m1"/>
+                            <constraint firstItem="BA6-eV-NSe" firstAttribute="trailing" secondItem="iJh-u6-QoD" secondAttribute="trailing" id="SRQ-rp-Bgv"/>
+                            <constraint firstItem="JG6-yR-s3b" firstAttribute="top" secondItem="BA6-eV-NSe" secondAttribute="bottom" constant="85" id="XIj-FB-fP7"/>
+                            <constraint firstItem="JG6-yR-s3b" firstAttribute="leading" secondItem="hiJ-0c-N7Z" secondAttribute="leading" constant="44" id="cjG-Fb-Nap"/>
+                            <constraint firstItem="BA6-eV-NSe" firstAttribute="trailing" secondItem="3Cb-92-3ob" secondAttribute="trailing" id="hkm-Az-cF9"/>
+                            <constraint firstItem="3Cb-92-3ob" firstAttribute="leading" secondItem="hiJ-0c-N7Z" secondAttribute="leading" id="lbT-oa-Fx1"/>
+                            <constraint firstItem="BA6-eV-NSe" firstAttribute="top" secondItem="3Cb-92-3ob" secondAttribute="bottom" constant="46" id="pAp-Zy-ihp"/>
                             <constraint firstItem="iJh-u6-QoD" firstAttribute="leading" secondItem="3Hr-7V-GhY" secondAttribute="leading" id="pRO-ze-3WD"/>
                             <constraint firstItem="hiJ-0c-N7Z" firstAttribute="bottom" secondItem="iJh-u6-QoD" secondAttribute="bottom" constant="40" id="q2w-jN-sGk"/>
-                            <constraint firstItem="BA6-eV-NSe" firstAttribute="trailing" secondItem="3Cb-92-3ob" secondAttribute="trailing" id="sSO-3N-AyL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hiJ-0c-N7Z"/>
                     </view>
@@ -93,7 +105,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="CN9-v0-OPL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="45"/>
+                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -105,7 +117,7 @@
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="26"/>
+                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2u-AR-zwa">
@@ -113,7 +125,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="77" id="0e0-9i-4EW"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="37"/>
+                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="37"/>
                                 <state key="normal" title="Home"/>
                                 <connections>
                                     <segue destination="IPp-TN-Bpo" kind="show" id="6R3-mB-VTF"/>
